@@ -6,7 +6,7 @@
 #    By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 11:30:23 by nugarcia          #+#    #+#              #
-#    Updated: 2022/11/01 11:00:51 by nugarcia         ###   ########.fr        #
+#    Updated: 2022/11/01 11:06:07 by nugarcia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,5 +30,3 @@ clean:
 fclean: clean 
 		$(RM)	$(NAME)
 re:	fclean	$(NAME)
-
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHNP4ApWalyOYC+DwryQbDXrseptVG8QRBUHhPJo8hQ6l8zIoZGBMJMA97M2KFxk24iw0Au8jecepdhl9Ev2LUpVhdDSWiauUsT3GX8HiSylm246WQlTf2AQPjDqlQ9g2BYCnfe/upxyyVkJcydmq/07RhDhcSt+1tDPIm6UAJB+6LmJ5E6bZ/QttwiLErjdAYhzXO+pERbq/oLpWNsRs7zZocuv31CMWGF5SLRfxCEhtS6J/mRir1rHFHyXSTErw5MnlXj/aFlwovMO8Zx6Xh6GZdWscZvrcy4aVhskAQbl6LuRzCkgSC6Rnk/+HeDldy9+XdSnjViiShEd1YU9i4C9U81UbUTAJmNs7jN6+zY/SresR3yho8hHKcklw5TR3SlzgqHUdrTHkca0k1t52KNGYtQfJmOugQmMr/arXpEYONyUx5M1oOC05xJAw5bc6xTOPlkkV1iHgfzmFFM9z2YcNnCztEOCAX0/SfLfVN2ZuG+f0aMsWGNSkH6CNv330= nugarcia@c1r17s13.42lisboa.com
