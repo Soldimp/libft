@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 11:34:26 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/10/28 14:18:01 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/02 17:32:46 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 	csrc = (char *)src;
 	cdest = (char *)dest;
-	if (!src && !dest)
+	if (!src && !dest)git
 		return (0);
 	i = 0;
 	while (i < len || cdest[i] == csrc[i])
