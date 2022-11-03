@@ -6,7 +6,7 @@
 #    By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 11:30:23 by nugarcia          #+#    #+#              #
-#    Updated: 2022/11/03 11:17:54 by nugarcia         ###   ########.fr        #
+#    Updated: 2022/11/03 12:06:15 by nugarcia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ ft_memcmp ft_strlen ft_strlcpy ft_strlcat ft_strchr ft_strrchr\
 ft_atoi ft_isalpha ft_isdigit ft_isalnum ft_strncmp ft_strnstr\
 ft_isascii ft_isprint ft_toupper ft_tolower ft_strdup ft_putstr_fd\
 ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_substr ft_strjoin ft_strtrim\
-ft_strmapi ft_striteri\
+ft_strmapi ft_striteri ft_itoa\
 
 CC =gcc
 RM =rm -f

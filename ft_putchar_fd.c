@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:57:49 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/10/31 15:58:55 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/03 11:59:45 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd == -1)
+		return ;
 	write (fd, &c, 1);
 }
