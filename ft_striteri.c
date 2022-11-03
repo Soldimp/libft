@@ -1,47 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 14:25:26 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/03 11:17:27 by nugarcia         ###   ########.fr       */
+/*   Created: 2022/11/03 11:18:16 by nugarcia          #+#    #+#             */
+/*   Updated: 2022/11/03 11:24:54 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	char				*ptr;
-	unsigned int		i;
+	unsigned int	i;
 
 	if (!s || !f)
-		return (0);
+		return ;
 	i = 0;
-	ptr = ft_strdup(s);
-	if (!ptr)
-		return (NULL);
-	while (i < (ft_strlen(s)))
+	while (s[i])
 	{
-		ptr[i] = f(i, ptr[i]);
+		f(i, &s[i]);
 		i++;
 	}
-	ptr[i] = '\0';
-	return (ptr);
 }
-/*char f(unsigned int i, char c)
-{
-	char str;
-	str = c + 1;
-	return (str);
-}
-
-int main()
-{
-	char str1[] = "abc";
-	char* str2;
-	str2 = ft_strmapi(str1, ft_isalnum);
-	printf("%s\n", str2);
-}*/
