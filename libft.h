@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 11:30:53 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/02 17:46:24 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/03 11:13:39 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 # include <string.h>
 # include <unistd.h>
 # include <limits.h>
+
+//Parte 1
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -53,5 +55,5 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-//char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 #endif
