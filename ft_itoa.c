@@ -6,26 +6,23 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:31:36 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/03 17:00:19 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:37:35 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//i = 2 because it will be 0 and 
-//some number if the number is negative
 
 static	int	numcount(int n)
 {
 	int				i;
 	unsigned int	num;
 
-	i = 0;
+	i = 1;
 	num = n;
 	if (n < 0)
 	{
-		i = 2;
 		num = -n;
+		i++;
 	}
 	while (num > 9)
 	{
@@ -51,20 +48,19 @@ char	*ft_itoa(int n)
 		num = -n;
 		ptr[0] = '-';
 	}
-	ptr[i] = 0;
-	ptr[i--] = '0';
+	ptr[i--] = '\0';
+	if (num == 0)
+		ptr[i] = '0';
 	while (num > 0)
 	{
-		ptr[i] = num % 10 + 48;
-		num = num / 10;
-		i--;
+		ptr[i--] = num % 10 + 48;
+		num /= 10;
 	}
 	return (ptr);
 }
 
-
-int main()
+/*int main()
 {
-	printf("Numero  13 -> \t%s \n", ft_itoa(13));
-	printf("Numero -13 -> \t%s \n", ft_itoa(-13));
-}
+	printf("Numero  13 -> \t%s \n", ft_itoa(0));
+	//printf("Numero -13 -> \t%s \n", ft_itoa(0));
+}*/
