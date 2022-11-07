@@ -3,30 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nuno <nuno@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:31:23 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/06 17:09:13 by nuno             ###   ########.fr       */
+/*   Updated: 2022/11/07 11:05:13 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int wordcount(char const *str, char *separ)
+static	int	wordcount(char const *str, char separ)
 {
-	int i;
-	int flag;
+	int	i;
+	int	flag;
 
 	i = 0;
 	flag = 0;
 	while (*str)
 	{
-		if (*str != *separ && flag == 0)
+		if (*str != separ && flag == 0)
 		{
 			flag = 1;
 			i++;
 		}
-		else if (*str == *separ)
+		else if (*str == separ)
 			flag = 0;
 		str++;
 	}
@@ -56,7 +56,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = -1;
-	wordsize = wordcount(s,c);
+	wordsize = wordcount(s, c);
 	newstr = malloc((wordsize + 1) * sizeof(char *));
 	if (!newstr)
 		return (NULL);
@@ -72,12 +72,15 @@ char	**ft_split(char const *s, char c)
 	return (newstr);
 }
 
-int main()
+/*int	main(void)
 {
-	char str[] = "Geeks for Geeks";
-    char **token = ft_split(str, " ");
-    	printf("first: %d\n", wordcount(str, " "));
-		printf("second: %s\n", token[1]);
-		printf("third: %s\n", token[2]);
-    return 0;
-}
+	int		index;
+	char	**split;
+	split = ft_split("a bb c dd ", ' ');
+	index = 0;
+	while (split[index])
+	{
+		printf("%s\n", split[index]);
+		index++;
+	}
+}*/
