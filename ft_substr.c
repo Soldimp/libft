@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 15:04:36 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/04 16:09:18 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:24:20 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 		*dest = 0;
 		return (dest);
 	}
-	if (!str)
-		return (0);
 	if (len >= ft_strlen(str))
 		len = ft_strlen(str) - start;
 	dest = (char *)malloc(len + 1);
