@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 10:36:10 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/08 11:00:39 by nugarcia         ###   ########.fr       */
+/*   Created: 2022/11/08 11:23:41 by nugarcia          #+#    #+#             */
+/*   Updated: 2022/11/08 11:33:48 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+t_list	*ft_lstlast(t_list *lst)
 {
-	size_t	p;
+	t_list	*lastnode;
 
-	if (!s1 || !set)
-		return (0);
-	while (*s1 && ft_strchr(set, *s1))
-		s1++;
-	p = ft_strlen(s1);
-	while (p && ft_strchr(set, s1[p]))
-		p--;
-	return (ft_substr(s1, 0, p + 1));
+	lastnode = lst;
+	if (lastnode == NULL)
+		return (NULL);
+	while (lastnode->next)
+		lastnode = lastnode->next;
+	return (lastnode);
 }

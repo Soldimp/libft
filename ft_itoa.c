@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:31:36 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/04 12:37:35 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/08 14:33:47 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ char	*ft_itoa(int n)
 
 /*int main()
 {
+	printf("div: \t%d \n",numcount(0));
 	printf("Numero  13 -> \t%s \n", ft_itoa(0));
 	//printf("Numero -13 -> \t%s \n", ft_itoa(0));
 }*/
