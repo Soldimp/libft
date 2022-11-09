@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
+/*   By: nuno <nuno@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:25:26 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/03 11:17:27 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/09 18:14:28 by nuno             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//create new string from modifying string with specified function.
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

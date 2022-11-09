@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+         #
+#    By: nuno <nuno@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 11:30:23 by nugarcia          #+#    #+#              #
-#    Updated: 2022/11/08 15:06:40 by nugarcia         ###   ########.fr        #
+#    Updated: 2022/11/09 18:28:39 by nuno             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_substr ft_strjoin ft_strtrim\
 ft_strmapi ft_striteri ft_itoa ft_split\
 
 BONUS = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast ft_lstadd_back\
-ft_lstdelone ft_lstclear\
+ft_lstdelone ft_lstclear t_list ft_lstmap ft_lstiter\
 
 CC =gcc
 RM =rm -f
