@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:16:56 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/07 18:08:21 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/10 12:05:41 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[d_idx] = '\0';
 	return (d_len + s_len);
 }
+
+/*int main()
+{
+	char dest[] = "BBBB";
+	char source[] = "AAAAAAAAA";
+	printf("Fake \t\t-> %zu \n", ft_strlcat(dest, source, 1));	
+}*/

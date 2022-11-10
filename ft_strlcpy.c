@@ -6,11 +6,15 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 11:22:42 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/01 17:38:40 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/10 12:09:50 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//The strlcpy() and strlcat() functions return 
+//the total length of the string they tried to create.
+//For strlcpy() that means the length of src. 
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -30,3 +34,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (src_len);
 }
+
+/*int main()
+{
+	char dest[] = "";
+	const char source[] = "Diogo0013";
+	printf("Fake \t\t-> %zu \n", ft_strlcpy(dest, source, 5));
+}*/

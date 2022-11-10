@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nuno <nuno@student.42.fr>                  +#+  +:+       +#+         #
+#    By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 11:30:23 by nugarcia          #+#    #+#              #
-#    Updated: 2022/11/09 18:28:39 by nuno             ###   ########.fr        #
+#    Updated: 2022/11/10 14:20:15 by nugarcia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,12 +19,14 @@ ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_substr ft_strjoin ft_strtrim\
 ft_strmapi ft_striteri ft_itoa ft_split\
 
 BONUS = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast ft_lstadd_back\
-ft_lstdelone ft_lstclear t_list ft_lstmap ft_lstiter\
+ft_lstdelone ft_lstclear ft_lstmap ft_lstiter\
 
 CC =gcc
 RM =rm -f
-CFLAGS = -Wall -Werror -Wextra -I.
-
+CFLAGS = -Wall -Werror -Wextra 
+#'ar rc' is the command used to create libraries: c means the library 
+#will be created if it does not exist, 
+#and r that new objects replace old objects with the same name (if any).
 all:$(NAME)
 
 $(NAME): $(SRC:=.o)

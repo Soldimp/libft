@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 11:34:26 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/02 17:32:46 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/10 11:57:29 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@
 	return (cdest);
 }*/
 
+//copy byte string.
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*a;
