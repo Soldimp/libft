@@ -6,7 +6,7 @@
 #    By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 11:30:23 by nugarcia          #+#    #+#              #
-#    Updated: 2022/11/10 14:20:15 by nugarcia         ###   ########.fr        #
+#    Updated: 2022/11/14 10:53:45 by nugarcia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ ft_strmapi ft_striteri ft_itoa ft_split\
 BONUS = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast ft_lstadd_back\
 ft_lstdelone ft_lstclear ft_lstmap ft_lstiter\
 
-CC =gcc
+CC = gcc
 RM =rm -f
 CFLAGS = -Wall -Werror -Wextra 
 #'ar rc' is the command used to create libraries: c means the library 

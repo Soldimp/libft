@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:31:23 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/08 14:34:18 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/14 10:53:09 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ char	**ft_split(char const *s, char c)
 		newstr[j] = ft_substr(s, i, strsize);
 		i += strsize;
 	}
-	newstr[j] = '\0';
+	newstr[j] = NULL;
 	return (newstr);
 }
 
